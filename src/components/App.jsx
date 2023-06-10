@@ -16,15 +16,15 @@ export const App = () => {
 
     switch (name) {
       case 'good':
-        setGood(good + 1);
+        setGood(good => good + 1);
         break;
       
       case 'neutral':
-        setNeutral(neutral + 1);
+        setNeutral(neutral => neutral + 1);
         break;
       
       case 'bad':
-        setBad(bad + 1);
+        setBad(bad => bad + 1);
         break;
       
       default:
